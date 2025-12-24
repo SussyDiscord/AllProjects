@@ -2,8 +2,11 @@ import os #Operation system
 from dotenv import load_dotenv
 from google import genai
 import streamlit as st
+from Helper import *
 
 st.title(" AI משחק אליאס מול")
+
+API_KEY = getAPIkey()
 
 st.set_page_config(
     page_title="משחק אליאס מול AI",
@@ -12,7 +15,7 @@ st.set_page_config(
 )
 
 
-load_dotenv()
+#   load_dotenv()
 API_KEY = os.getenv("API_KEY")
 def start():
     st.session_state.end = False
