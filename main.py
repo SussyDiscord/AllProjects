@@ -56,6 +56,6 @@ with col2:
 
     # כפתור שעובד בכל מצב
     if st.button("➡️ מעבר למשחק", use_container_width=True):
-        st.switch_page("Pages/Elias.py")
+        st.switch_page("pages/Elias.py")
 
     st.markdown("</div>", unsafe_allow_html=True)

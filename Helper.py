@@ -6,7 +6,7 @@ import streamlit as st
 
 def getAPIkey():
     load_dotenv()
-    API_KEY = os.getenv("API_KEY") or sst.secrets["API KEY"]
+    API_KEY = os.getenv("API_KEY") or st.secrets["API KEY"]
     return API_KEY
 
 def setRTL():
